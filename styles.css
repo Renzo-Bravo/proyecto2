@@ -24,6 +24,8 @@ ol, ul{
 .header {
     height: 120px;
     background-color: rgb(173, 11, 43);
+    position: sticky;
+    top: 0;
 }
 .navbar {
     height: 100%;

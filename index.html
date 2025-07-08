@@ -111,31 +111,40 @@
         </section>
 
         <section class="joinSection">
-            <h2>Inscripción</h2>
-            <p>Únete a nosotros en este encuentro transformador. La inscripción incluye todas las conferencias, talleres, materiales y refrigerios.</p>
-
+            <div class="descripcion">
+                <h2>Inscripción</h2>
+                <p>Únete a nosotros en este encuentro transformador. La inscripción incluye todas las conferencias, talleres, materiales y refrigerios.</p>
+             </div>   
             <div class="joinCosts">
                 <h3>Costos de Participación</h3>
-                <p>Por persona</p>
-                <p class="joinPrice">$150.000</p>
+                <div class="joinPrice">
+                <p >Por persona</p><p>$150.000</p>
+                </div>
             </div>
 
             <div class="joinForm">
                 <h3>Formulario de Inscripción</h3>
-                <form>
-                    <label for="fname">Nombres</label>
-                    <input type="text" id="fname" name="fname" value="Nombre">
-                    <label for="lname">Apellido</label>
-                    <input type="text" id="lname" name="lname" value="Apellido">
+                <form> 
+                    <div class="Nombre-Completo">               
+                        <input class="Nombre" type="text" id="fname" name="fname" value="Nombre">                    
+                        <input class="Apellido" type="text" id="lname" name="lname" value="Apellido">
+                    </div>
+                    <div class="email-telefono">
+                    <input class="Email" type="email" name="Email" id="Email" value="Email@gmail.com">
+                    <input class="Telefono" type="tel" name="Telefono" id="Telefono" value="Telefono">
+                    </div>
                 </form>
             </div>
-        </section>
-
-        <section class="donations">
-            <!-- Falta background img -->
-            <h2>❤ Apoya nuestro proyecto</h2>
-            <p>Tu donación nos ayuda a seguir fortaleciendo la educación rural y hacer que estos encuentros sean accesibles para más educadores.</p>
-            <button type="button">❤ Hacer una donación</button>
+            <div class="donations">
+                
+                <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+</svg> Apoya nuestro proyecto</h2>
+                <p>Tu donación nos ayuda a seguir fortaleciendo la educación rural y hacer que estos encuentros sean accesibles para más educadores.</p>
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+</svg> Hacer una donación</button>
+            </div>   
         </section>
 
         <section class="sponsors">

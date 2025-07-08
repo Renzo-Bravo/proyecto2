@@ -21,30 +21,17 @@
             </label>
             <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
             <ul class="ul-links">
-                <li class="li-links">
-                    <a href="#" class="links">Incio</a>
-                </li>
-                <li>
-                    <a href="#" class="links">Evento</a>
-                </li class="li-links">
-                <li>
-                    <a href="#" class="links">Disertantes</a>
-                </li class="li-links">
-                <li>
-                    <a href="#" class="links">Cronograma</a>
-                </li class="li-links">
-                <li>
-                    <a href="#" class="links">Inscripcion</a>
-                </li>
-                <li>
-                    <a href="#" class="links">Contacto</a>
-                </li>
-                
+                <li class="li-links"><a href="#heroSection" class="links">Incio</a></li>
+                <li class="li-links"><a href="#eventCotent" class="links">Evento</a></li >
+                <li class="li-links"><a href="#speakers" class="links">Disertantes</a></li>
+                <li class="li-links"><a href="#activitySchedule" class="links">Cronograma</a></li>
+                <li class="li-links"><a href="#joinSection" class="links">Inscripcion</a></li>
+                <li class="li-links"><a href="#contact" class="links">Contacto</a></li>
             </ul>
         </nav>
 
     </header>
-    <div class="heroSection">
+    <div class="heroSection" id="heroSection">
         <h1>
             VII Jornadas Regionales De Fediap
             <br>
@@ -65,7 +52,7 @@
             <p>Las Jornadas Regionales de FEDIAP Destinado a docentes y técnicos de escuelas agrotécnicas de todo el país, durante tres días intensivos se realizarán actividades de exposición de experiencias, presentación de casos, disertaciones y networking.</p>
         </section>
 
-        <section class="eventContent">
+        <section class="eventContent" id="eventCotent">
             <!-- Incluir ícono de sección -->
             <h3>Energías renovables</h3>
             <p>Técnicas innovadoras para una producción responsable con el medio ambiente</p>
@@ -79,7 +66,7 @@
             <p>Herramientas digitales para mejorar la calidad educativa rural</p>
         </section>
 
-        <section class="speakers">
+        <section class="speakers" id="speakers">
             <h2>Nuestros Disertantes</h2>
             <p>Profesionales destacados del ámbito educativo, agrícola y de desarrollo rural compartirán sus conocimientos y experiencias.</p>
 
@@ -105,12 +92,12 @@
             </div>
         </section>
 
-        <section class="activitySchedule">
+        <section class="activitySchedule" id="activitySchedule">
             <h2>Cronograma de actividades</h2>
             <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRqithTWBeZSfdSlcoMKWYVfSHIHk4lOpwNq2s8ypYA-hf2OFiuyXsv2ApEVgtYMUtsFz8hAao2sAXr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
         </section>
 
-        <section class="joinSection">
+        <section class="joinSection" id="joinSection">
             <div class="descripcion">
                 <h2>Inscripción</h2>
                 <p>Únete a nosotros en este encuentro transformador. La inscripción incluye todas las conferencias, talleres, materiales y refrigerios.</p>
@@ -126,12 +113,13 @@
                 <h3>Formulario de Inscripción</h3>
                 <form> 
                     <div class="Nombre-Completo">               
-                        <input class="Nombre" type="text" id="fname" name="fname" value="Nombre">                    
-                        <input class="Apellido" type="text" id="lname" name="lname" value="Apellido">
+                        <input class="Nombre" type="text" id="fname" name="fname" placeholder="Nombre">                    
+                        <input class="Apellido" type="text" id="lname" name="lname" placeholder="Apellido">
                     </div>
-                    <div class="email-telefono">
-                    <input class="Email" type="email" name="Email" id="Email" value="Email@gmail.com">
-                    <input class="Telefono" type="tel" name="Telefono" id="Telefono" value="Telefono">
+                    <div class="email-telefono-Mensaje">
+                        <input class="Email" type="email" name="Email" id="Email" placeholder="Email@gmail.com">
+                        <input class="Telefono" type="tel" name="Telefono" id="Telefono" placeholder="Telefono">
+                        <input class="Mensaje" type="text" name="mensaje" id="" placeholder="Cuentanos...">
                     </div>
                 </form>
             </div>
@@ -143,7 +131,7 @@
                 <p>Tu donación nos ayuda a seguir fortaleciendo la educación rural y hacer que estos encuentros sean accesibles para más educadores.</p>
                 <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
   <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
-</svg> Hacer una donación</button>
+</svg>Hacer una donación</button>
             </div>   
         </section>
 
@@ -192,7 +180,7 @@
              <iframe width="560" height="315" src="https://www.youtube.com/embed/pkBk448pQcY?si=NByKnMdZIrTrZH0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contacto</h2>
             <h3>Dudas, consultas y más información:</h3>
             <!-- Añadir íconos de correo y celular -->

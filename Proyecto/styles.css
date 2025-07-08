@@ -1,6 +1,12 @@
 :root {
   --altura_header: 80px;
 }
+html{
+  scroll-behavior: smooth;
+}
+section[id]{
+  scroll-margin-top: 120px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +29,7 @@ ul {
 .menu-hamburguesa:checked + .ul-links {
   height: calc(100vh - var(--altura_header));
 }
+
 .header {
   height: 120px;
   background-color: rgb(183, 49, 44);
@@ -82,12 +89,13 @@ ul {
     background-color: rgb(183, 49, 44);
   }
   .links {
-    font-size: 1.2rem;
-    padding: 0.1rem 0.2rem;
+    font-size: 1.2rem; 
     transition: all 0.3s;
   }
   .links:hover {
     background-color: rgba(131, 26, 22, 0.377);
+    border-radius: 15px;
+    padding: 0 8px;
   }
 }
 .donations {
@@ -119,7 +127,7 @@ ul {
   padding-bottom: 10px;
   font-weight: bold;
   display: grid;
-  grid-template-columns: 30px 250px;
+  grid-template-columns: 30px 300px;
   grid-column: 1;
   width: 100%;
 }
@@ -130,7 +138,7 @@ h2 svg {
   color: rgb(183, 49, 44);
 }
 .donations p {
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 10px;
   align-items: center;
 }
@@ -144,8 +152,8 @@ h2 svg {
   border: none;
   border-radius: 15px;
   display: grid;
-  grid-template-columns: 30px 150px;
-  grid-column: 1;
+  grid-template-columns: 20px 150px; 
+  margin: 0 5px;
 }
 iframe {
   width: 100%;
@@ -159,11 +167,16 @@ button svg {
 .joinSection {
   background-color: rgb(183, 49, 44);
   color: #f2f2f2;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .descripcion {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 80%;
   text-align: center;
+  margin: 0 10%;
 }
 .descripcion p {
   padding-top: 10px;
@@ -183,27 +196,31 @@ button svg {
 }
 .joinCosts h3 {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   padding-bottom: 10px;
   font-family: serif;
 }
 .joinPrice {
-  margin: 0 40px;
+  margin: 0 20px;
   text-align: center;
+  justify-content: center;
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: 150px 150px;
 }
 .joinPrice p {
-  grid-row: 1;
+  font-size: 20px;
+  color: rgb(222, 208, 21);
 }
 .joinForm {
+  margin: 20px 20px;
   text-align: center;
   padding: 20px 0;
   background-color: rgba(242, 242, 242, 0.2);
-  border-radius: 300px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 .joinForm h3{
-    font-size: 24px;
+  font-size: 24px;
 }
 .Nombre-Completo {
   display: grid;
@@ -212,32 +229,79 @@ button svg {
   padding: 10px;
 }
 .Nombre {
-    background-color: rgba(242, 242, 242, 0.30);
-    margin: 0 10px;
-    border: none;
-    border-radius: 20px;
+  background-color: rgba(242, 242, 242, 0.30);
+  margin: 0 10px;
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 .Apellido {
-    background-color: rgba(242, 242, 242, 0.30);
-    margin: 0 10px;
-    border: none;
-    border-radius: 20px;
+  background-color: rgba(242, 242, 242, 0.30);
+  margin: 0 10px;
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
-.email-telefono{
-    display: grid;
-    grid-template-rows: auto;
-    gap: 10px;
-    margin: 0 40px;
+.email-telefono-Mensaje{
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: 10px;
+  margin: 0 40px;
 }
 .Email {
-    background-color: rgba(242, 242, 242, 0.30);
-    margin: 0 10px;
-    border: none;
-    border-radius: 20px;
+  background-color: rgba(242, 242, 242, 0.30);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  width: 280px;
+  height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 .Telefono {
-    background-color: rgba(242, 242, 242, 0.30);
-    margin: 0 10px;
-    border: none;
-    border-radius: 20px;
+  background-color: rgba(242, 242, 242, 0.30);
+  border: none;
+  border-radius: 20px;
+  width: 280px;
+  height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.Mensaje{
+  background-color: rgba(242, 242, 242, 0.30);
+  border: none;
+  border-radius: 20px;
+  width: 280px;
+  height: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.Email::placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  padding: 2px 5px;
+}
+
+.Telefono::placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  padding: 2px 5px;
+}
+
+.Nombre::placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  padding: 2px 5px;
+}
+
+.Apellido::placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  padding: 2px 5px;
+}
+.Mensaje::placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  padding: 2px 5px;
+  text-align: justify;
 }

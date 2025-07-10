@@ -14,7 +14,7 @@ header {
 }
 
 .logo, img {
-    width: 200px;
+    width: 150px;
 }
 
 .heroSection {
@@ -124,17 +124,32 @@ button, #button {
     margin-bottom: 4%;
 }
 
-.speakers h2 {
-    color: rgb(183, 49, 44);
-}
-
 .speakerCard {
     border-color: #ffcc0071;
+    border-style: solid;
+    border-radius: 5%;
     background-color: #ffcc0071;
+    margin: 4%;
+    width: 100%;
+}
+
+.speakerCard img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.speakers h2 {
+    color: rgb(183, 49, 44);
 }
 
 .speakerCard h3 {
     color: rgb(183, 49, 44);
     margin: 2%;
 }
+
+.speakerCard h4 {
+    margin: 3%;
+}
+
+
 

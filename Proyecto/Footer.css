@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+}
+a {
+  text-decoration: none;
+}
+footer{
+    background-color: rgb(183, 49, 44);
+    height: auto;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.logo-redes{
+  display: grid;
+    grid-template-columns: 150px 150px;
+    align-items: center;
+    width: 95%;
+    padding: 20px 20px 0;
+    color: white;
+    font-size: 14px;
+    justify-content: space-between;
+    justify-self: center;
+}
+.Redes-Sociales{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    align-self: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.instagram{
+    height: 25px;
+    width: 25px;
+    fill: white;
+}
+.facebook{
+    height: 25px;
+    width: 25px;
+    fill: white;
+}
+.linkedin{
+    height: 25px;
+    width: 25px;
+    fill: white;
+}
+.youtube{
+    height: 25px;
+    width: 25px;
+    fill: white;
+}
+.line-footer{
+  margin-top: 10px;
+  background-color: #f2f2f2;
+  width: 90%;
+  height: 1px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  justify-self: center;
+}
+.terminos{
+  font-size: 16px;
+  justify-self: center;
+  padding: 20px 0 30px 0;
+}

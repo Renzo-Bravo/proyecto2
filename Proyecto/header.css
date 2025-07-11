@@ -1,0 +1,100 @@
+:root {
+  --altura_header: 80px;
+}
+html{
+  scroll-behavior: smooth;
+}
+[id]{
+  scroll-margin-top: 120px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+}
+a {
+  text-decoration: none;
+}
+/*header*/
+ol,
+ul {
+  list-style: none;
+}
+.menu-hamburguesa {
+  display: none;
+}
+.menu-hamburguesa:checked + .ul-links {
+  height: calc(100vh - var(--altura_header));
+}
+
+.header {
+  height: 120px;
+  background-color: rgb(183, 49, 44);
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.navbar {
+  height: 100%;
+  display: flex;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 30px;
+}
+.Logo-Cruzada {
+  width: 150px;
+}
+.list-icon {
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.ul-links {
+  width: 100%;
+  background-color: rgb(158, 41, 37);
+  position: absolute;
+  top: 120px;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  transition: all 0.3s;
+}
+.links {
+  font-size: 3em;
+  color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .label-hamburguesa {
+    display: none;
+  }
+  .ul-links {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: rgb(183, 49, 44);
+  }
+  .links {
+    font-size: 1.2rem; 
+    transition: all 0.3s;
+  }
+  .links:hover {
+    background-color: rgba(131, 26, 22, 0.377);
+    border-radius: 15px;
+    padding: 0 8px;
+  }
+}

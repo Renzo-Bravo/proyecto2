@@ -175,6 +175,7 @@
   grid-template-columns:170px 20px;
   align-items: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 .Eviar svg{
   color: white;

@@ -1,0 +1,77 @@
+/*Donaciones*/
+.donations {
+  position: relative;
+  background-image: url("../img/Foto2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f2f2f2;
+  padding: 20px;
+  z-index: 0;
+  background-color: #f2f2f2;
+}
+.donations::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+.donations > * {
+  position: relative;
+  z-index: 1;
+}
+.donations h2 {
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  justify-self: center;
+  text-align: center;
+  gap: 10px;
+}
+h2 svg {
+  grid-column: auto;
+  width: 50px;
+  height: 50px;
+  color: rgb(183, 49, 44);
+  align-self: center;
+}
+.donations p {
+  font-size: 20px;
+  padding-bottom: 10px;
+  align-items: center;
+  width: 80%;
+  justify-self: center;
+  margin: 50px 0 0;
+  text-align: center;
+}
+.donations button {
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  height: 40px;
+  background-color: rgba(240, 128, 128, 0.809);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 20px 180px; 
+  margin: 50px 0 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  justify-self: center;
+  font-size: 16px;
+}
+iframe {
+  width: 100%;
+}
+button svg {
+  grid-column: auto;
+  width: 50px;
+  height: 20px;
+  color: rgb(183, 49, 44);
+}

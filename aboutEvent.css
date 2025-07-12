@@ -1,20 +1,20 @@
-.about h2 {
-    color: rgb(183, 49, 44);
-}
-
-.about p {
-    margin: 3%;
-}
+/*Sección eventos/Section event*/
 
 .about{
+    margin: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+.about h2 {
+    color: rgb(183, 49, 44);
+}
 
-/*Sección eventos/Section event*/
+.about p {
+    margin: 2%;
+}
 
 .eventContent{
     border-style: solid;
@@ -27,7 +27,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
 
+.card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .eventContent .iconContent {
@@ -48,8 +54,10 @@
 }
 
 .eventContent h3 {
-    color: rgb(183, 49, 44);;
+    color: rgb(183, 49, 44);
 }
+
+/*Section speakers/Disertantes*/
 
 .speakers {
     display: flex;
@@ -57,8 +65,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
     font-size: 16px;
 }
 
@@ -67,7 +75,7 @@
     border-style: solid;
     border-radius: 5%;
     background-color: #ffcc0071;
-    margin: 4%;
+    margin: 3%;
     width: 100%;
 }
 
@@ -85,6 +93,91 @@
     margin: 2%;
 }
 
-.speakerCard h4 {
-    margin: 3%;
+.speakerCard a {
+    text-decoration: none;
 }
+
+.speakerCard h4 {
+    margin: 2%;
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        margin: auto;
+        margin-left: 3%;
+        margin-right: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about p {
+        margin: 1%;
+    }
+
+    .eventContent {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .eventContent .iconContent {
+        border-radius: 50%;
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        color: white;
+        font-size: 30px;
+    }
+
+    .card {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Section speakers/Disertantes*/
+
+    .speakers {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .speakerCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        margin: 0;
+        padding: 0.5%;
+    }
+
+    .speakerCard img {
+        width: 100%;
+        border-radius: 5%;
+    }
+
+    .speakerCard a {
+        text-decoration: none;
+    }
+
+}
+
+
+

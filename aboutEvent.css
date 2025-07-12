@@ -1,0 +1,90 @@
+.about h2 {
+    color: rgb(183, 49, 44);
+}
+
+.about p {
+    margin: 3%;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Sección eventos/Section event*/
+
+.eventContent{
+    border-style: solid;
+    border-radius: 5%;
+    border-color: #ffcc0071;
+    background-color: #ffcc0071;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.eventContent .iconContent {
+    background-color: rgb(183, 49, 44);
+    border-style: solid;
+    border-color: rgb(183, 49, 44);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 30px;
+    color: white;
+}
+
+.eventContent h3 {
+    color: rgb(183, 49, 44);;
+}
+
+.speakers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 16px;
+}
+
+.speakerCard {
+    border-color: #ffcc0071;
+    border-style: solid;
+    border-radius: 5%;
+    background-color: #ffcc0071;
+    margin: 4%;
+    width: 100%;
+}
+
+.speakerCard img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.speakers h2 {
+    color: rgb(183, 49, 44);
+}
+
+.speakerCard h3 {
+    color: rgb(183, 49, 44);
+    margin: 2%;
+}
+
+.speakerCard h4 {
+    margin: 3%;
+}

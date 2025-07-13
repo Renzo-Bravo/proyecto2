@@ -17,9 +17,35 @@ header {
     width: 150px;
 }
 
-
 .separator {
     width: 100%;
+}
+    
+.separator1 {
+    display: none;
+}
+
+/*Tablets*/
+@media screen and (min-width:768px) {
+    .separator {
+        width: 100%;
+    }
+
+    .separator1 {
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    .separator {
+        display: none;
+    }
+
+    .separator1 {
+        display: flex;
+        width: 100%;
+    }
 }
 
 

@@ -30,7 +30,7 @@
     z-index: -1;
 }
 
-button, #button {
+.Inscripcion-buttom {
     background-color: rgb(183, 49, 44);
     border-color: rgb(183, 49, 44);
     border-style: solid;

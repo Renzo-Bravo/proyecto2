@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VII Jornadas Regionales de FEDIAP</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/donacion.css">
-    <link rel="stylesheet" href="/styles/inscripcion.css">
+    <!-- Renzo -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/aboutEvent.css">
+    <link rel="stylesheet" href="./styles/heroSection.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Renzo end -->
+    <!-- Mati -->
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/donacion.css">
+    <link rel="stylesheet" href="./styles/inscripcion.css">
+    <!-- Mati end -->
 </head>
 <body>
     <header class="header">
@@ -25,11 +32,11 @@
             </label>
             <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
             <ul class="ul-links">
-                <li class="li-links"><a href="#heroSection" class="links">Incio</a></li>
+                <li class="li-links"><a href="#heroSection" class="links">Inicio</a></li>
                 <li class="li-links"><a href="#eventCotent" class="links">Evento</a></li >
                 <li class="li-links"><a href="#speakers" class="links">Disertantes</a></li>
                 <li class="li-links"><a href="#activitySchedule" class="links">Cronograma</a></li>
-                <li class="li-links"><a href="#joinSection" class="links">Inscripcion</a></li>
+                <li class="li-links"><a href="#joinSection" class="links">Inscripción</a></li>
                 <li class="li-links"><a href="#contact" class="links">Contacto</a></li>
             </ul>
         </nav>
@@ -37,18 +44,26 @@
     </header>
     <div class="heroSection" id="heroSection">
         <h1>
-            VII Jornadas Regionales De Fediap
+            VII Jornadas Regionales
             <br>
-            CoFormación Docente de escuelas Agrotécnicas
+            De FEDIAP
+            <br>
+            CoFormación Docente
+            <br> 
+            de Escuelas Agrotécnicas
         </h1>
-    
+        <br>
         <h2>Educación agrotécnica y sustentabilidad: energías renovables y pedagogía en escuelas rurales</h2>
-
+        <br>
         <h3>30 y 31 de Marzo / 1 de Abril - 2026</h3>
+        <br>
         <h3>CEI SAN IGNACIO, Junin de los Andes, Neuquén</h3>
-
-        <button type="button">Inscribite ahora</button>
+        <br>
+        <button type="button">Inscribíte ahora</button>
     </div>
+
+    <img src="./img/guarpapampamediana.png" alt="guardaPampa" class="separator">
+    <img src="./img/Guardapampaentera.png" alt="guardaPampaEntera" class="separator1">
 
     <article>
         <section class="about">
@@ -56,40 +71,59 @@
             <p>Las Jornadas Regionales de FEDIAP Destinado a docentes y técnicos de escuelas agrotécnicas de todo el país, durante tres días intensivos se realizarán actividades de exposición de experiencias, presentación de casos, disertaciones y networking.</p>
         </section>
 
-        <section class="eventContent" id="eventCotent">
-            <!-- Incluir ícono de sección -->
-            <h3>Energías renovables</h3>
-            <p>Técnicas innovadoras para una producción responsable con el medio ambiente</p>
-            
-            <!-- Incluir ícono de sección -->
-            <h3>Sustentabilidad y pedadogía</h3>
-            <p>Fortalecimiento de las comunidades rurales y su participación activa</p>
+        <section class="eventContent">
+            <div class="card">
+                <div class="iconContent">
+                    <i class="bi bi-leaf"></i>
+                </div>
+                <h3>Energías renovables</h3>
+                <p>Técnicas innovadoras para una producción responsable con el medio ambiente</p>
+            </div>           
 
-            <!-- Incluir ícono de sección -->
-            <h3>Tecnologías y prácticas</h3>
-            <p>Herramientas digitales para mejorar la calidad educativa rural</p>
+            <div class="card">
+                <div class="iconContent">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <h3>Sustentabilidad y pedadogía</h3>
+                <p>Fortalecimiento de las comunidades rurales y su participación activa</p>
+            </div>
+
+            <div class="card">
+                <div class="iconContent">
+                    <i class="bi bi-laptop"></i>
+                </div>
+                <h3>Tecnologías y prácticas</h3>
+                <p>Herramientas digitales para mejorar la calidad educativa rural</p>
+            </div>
+
         </section>
 
-        <section class="speakers" id="speakers">
+        <img src="./img/guarpapampamediana.png" alt="guardaPampa" class="separator">
+        <img src="./img/Guardapampaentera.png" alt="guardaPampaEntera" class="separator1">
+
+        <section class="about">
             <h2>Nuestros Disertantes</h2>
             <p>Profesionales destacados del ámbito educativo, agrícola y de desarrollo rural compartirán sus conocimientos y experiencias.</p>
+        </section>
+
+        <section class="speakers">
 
             <div class="speakerCard">
-                <img src="./img" alt="Foto de disertante 1: *Nombre*">
+                <img src="./img/osito.jpeg" alt="Foto de disertante 1: *Nombre*">
                 <h3>Nombre y apellido de disertante 1</h3>
                 <a href="LinkedIn Link">LinkedIn</a>
                 <h4>Título de charla</h4>
             </div>
 
             <div class="speakerCard">
-                <img src="./img" alt="Foto de disertante 2: *Nombre*">
+                <img src="./img/osito.jpeg" alt="Foto de disertante 2: *Nombre*">
                 <h3>Nombre y apellido de disertante 2</h3>
                 <a href="LinkedIn Link">LinkedIn</a>
                 <h4>Título de charla</h4>
             </div>
 
             <div class="speakerCard">
-                <img src="./img" alt="Foto de disertante 3: *Nombre*">
+                <img src="./img/osito.jpeg" alt="Foto de disertante 3: *Nombre*">
                 <h3>Nombre y apellido de disertante 3</h3>
                 <a href="LinkedIn Link">LinkedIn</a>
                 <h4>Título de charla</h4>
@@ -208,7 +242,7 @@
     </article>
 <footer>
     <div class="logo-redes">
-        <img class="Logo-Cruzada" src="/Proyecto/img/LOGO EN BLANCO SINFONDO.png" alt="Logo-Cruzada">
+        <img class="Logo-Cruzada" src="./img/LOGO EN BLANCO SINFONDO.png" alt="Logo-Cruzada">
 
         <div class="Redes-Sociales">
             <a href="https://www.instagram.com/cruzadapatagonica/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

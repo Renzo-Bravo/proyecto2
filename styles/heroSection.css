@@ -15,7 +15,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/img/Foto1.jpg');
+    background-image: url('../img/Foto1.jpg');
     background-size: cover;
     background-position: center;
     z-index: -2;
@@ -36,7 +36,7 @@
     border-radius: 10%;
     color: white;
     margin: 2%;
-    padding: 3%;
+    padding: 1.5%;
     display: inline-block;
 }
 
@@ -52,6 +52,7 @@
     padding: 1%;
     display: inline-block;
     transform-origin: center;
+    font-size: 22px;
 }
 
 button:hover,

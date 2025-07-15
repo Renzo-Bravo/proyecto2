@@ -1,0 +1,47 @@
+.testimonials {
+    margin: 2%;
+}
+
+.testimonials h2 {
+    text-align: center;
+    color: rgb(183, 49, 44);
+    margin: 1%;
+}
+
+.collapsible {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.collapsible:after {
+  content: '\002B';
+  font-size: 30px;
+  color: rgb(183, 49, 44);
+  font-weight: bold;
+  float: right;
+  margin-left: 1rem;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.testimonialContent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.testimonialCard {
+    margin: 2%;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: center;
+}

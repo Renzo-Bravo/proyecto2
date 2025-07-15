@@ -1,0 +1,20 @@
+.previousEvents {
+    margin: 2%;
+}
+
+.previousEvents h2 {
+    text-align: center;
+    color: rgb(183, 49, 44);
+    margin: 1%;
+}
+
+.previousEvents h3 {
+    text-align: center;
+    margin: 1%;
+}
+
+.previousEvents p {
+    font-size: 22px;
+    text-align: center;
+    margin: 1%;
+}

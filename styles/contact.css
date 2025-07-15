@@ -1,0 +1,12 @@
+.contact {
+    text-align: center;
+    margin: 5%;
+}
+
+.contact h2 {
+    color: rgb(183, 49, 44);
+}
+
+.contact li {
+    font-size: 20px;
+}

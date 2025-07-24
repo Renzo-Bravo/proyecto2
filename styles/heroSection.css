@@ -45,6 +45,15 @@
     
 
 }
+button:hover,
+#button a:hover {
+    background-color: rgb(220, 20, 20);
+    border-color: rgb(220, 20, 20);
+    color: white;
+    transition: 1s;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
 
 @media screen and (min-width: 1024px) {
 
